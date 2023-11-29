@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  min-height: 100vh;
+  background: rgb(176, 31, 83);
+  background: linear-gradient(
+    -45deg,
+    rgba(176, 31, 83, 1) 30%,
+    rgba(8, 22, 68, 1) 70%
+  );
+  color: #fcfdfc;
+}
+
+.container {
+  background: #10181d;
+  width: 43rem;
+  height: 90rem;
+  box-shadow: 10px 10px 20px #10181d;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.heading {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #10181d;
+  height: 6rem;
+}
+
+.heading__logo {
+  margin-left: 2rem;
+}
+
+.your-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 6rem;
+  background-color: #10181d;
+  border-top: 1px solid #424242;
+}
+
+.fa-user {
+  position: absolute;
+  right: 2rem;
+}
+
+.your-profile h3 {
+  font-size: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  left: 1rem;
+  cursor: pointer;
+  transition: transform 0.5s;
+  padding: 1rem;
+}
+
+.arrow:hover {
+  transform: rotate(-90deg);
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 50rem;
+  background-image: url(./img/background.png);
+  border-top: 1px solid #424242;
+  border-bottom: 1px solid #424242;
+}
+
+.main .user-logo {
+  border-radius: 50%;
+}
+
+.main__text {
+  margin-top: 2.2rem;
+}
+
+.main__text p {
+  margin: 0.5rem;
+}
+
+.main__username {
+  font-weight: bold;
+}
+
+.main__userid {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.profile-info__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.profile-info__title {
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 1.2rem;
+}
+
+.underline {
+  position: absolute;
+  background-color: #fcfdfc;
+  bottom: 0;
+  height: 0.2rem;
+  width: 20rem;
+}
+
+.profile-info__btns {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-info__btns button {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.625rem;
+  border: 1px solid #fcfdfc;
+  background: #10181d;
+  color: #fcfdfc;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  margin: 2.4375rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  transition: transform 0.3s;
+}
+
+.profile-info__btns button:hover {
+  transform: scale(0.85);
+}
+
+.profile-info__btns button:focus {
+  outline: none;
+  transform: scale(0.85);
+}
+
+.profile-info__btns .save {
+  background: #eb246c;
+  border: 1px solid #eb246c;
+  color: #222;
+  font-weight: bold;
+}
+
+.profile-info__text {
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  margin-top: 1rem;
+}
+
+.bold {
+  font-weight: bold;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.profile-info__text p {
+  margin: 1rem;
+}
+
+.hide {
+  height: 0;
+  visibility: hidden;
+}
+
+.show {
+  height: 6rem;
+}

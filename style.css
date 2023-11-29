@@ -84,7 +84,7 @@ body {
   flex-direction: column;
   text-align: center;
   height: 50rem;
-  background-image: url(./img/background.png);
+  background-image: url(./background.png);
   border-top: 1px solid #424242;
   border-bottom: 1px solid #424242;
 }
